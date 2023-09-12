@@ -1,6 +1,7 @@
 /*
     WEB 303 Assignment 1 - jQuery
-    Aditya Suthar 
+    Aditya Suthar - 0835715
+    
 
     GitHub Repository Link: https://github.com/Aditya7573/Aditya_Suthar_WEB303Assignments.git
 */
