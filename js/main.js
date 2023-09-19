@@ -1,54 +1,21 @@
-// WEB303 Assignment 2
+$(document).ready(function() {
+    $("#prospect, #convert, #retain").on("click", function(event) {
+        event.preventDefault();
 
+        var linkId = $(this).attr("id");
 
-$(document).ready(function () {
-    $('#prospect').on('click', function () {
         $.ajax({
-            url: 'prospect.html',
-            type: 'GET',
-            dataType: 'html',
-            success: function (response) {
+            url: linkId + ".html",
+            type: 'GET', // Add this line to specify the request type
+            dataType: "html",
+            success: function(data) {
                 var $contentVal = $('#content');
-                $contentVal.hide().html(response).fadeIn(1500).css({
+                $contentVal.hide().html(data).fadeIn(1500).css({
                     'border': '1.5px solid blue'
                 });
             },
-            error: function () {
-                console.log('Something went wrong!');
-            }
-        });
-    });
-
-    $('#convert').on('click', function () {
-        $.ajax({
-            url: 'convert.html',
-            type: 'GET',
-            dataType: 'html',
-            success: function (response) {
-                var $contentVal = $('#content');
-                $contentVal.hide().html(response).fadeIn(1500).css({
-                    'border': '1.5px solid blue'
-                });
-            },
-            error: function () {
-                console.log('Something went wrong!');
-            }
-        });
-    });
-
-    $('#retain').on('click', function () {
-        $.ajax({
-            url: 'retain.html',
-            type: 'GET',
-            dataType: 'html',
-            success: function (response) {
-                var $contentVal = $('#content');
-                $contentVal.hide().html(response).fadeIn(1500).css({
-                    'border': '1.5px solid blue'
-                });
-            },
-            error: function () {
-                console.log('Something went wrong!');
+            error: function() {
+                alert("Error loading content.");
             }
         });
     });
