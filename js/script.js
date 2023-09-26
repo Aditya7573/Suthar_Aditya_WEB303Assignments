@@ -1,4 +1,3 @@
-// script.js
 
 // Method for $.getJSON request
 function fetchTeamDataJSON() {
@@ -51,6 +50,8 @@ function fetchTeamDataAjax() {
 
 // Call one of the methods in a jQuery ready function
 $(document).ready(function() {
-    // Call the fetchTeamDataAjax method to fetch and display data with a loading delay
+    // Hello Sir, Check my both method working in the below code 
+    // Thank you 
+    // Call the fetchTeamDataAjax or fetchTeamDataJSON  method to fetch and display data with a loading delay
     setTimeout(fetchTeamDataAjax, 3000); // 3 seconds delay
 });
