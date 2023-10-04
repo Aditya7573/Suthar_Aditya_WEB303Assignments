@@ -1,6 +1,6 @@
 /*
     Assignment #4
-    {Your name here}
+    Aditya Suthar
 */
 
 $(function () {
@@ -29,7 +29,7 @@ $(function () {
             var currentLon = position.coords.longitude;
             var accuracy = position.coords.accuracy;
 
-            // Display current location
+            // Display current location including accuracy
             $("#locationhere").html("Latitude: " + currentLat + "<br>Longitude: " + currentLon + "<br>Accuracy: " + accuracy + " meters");
 
             // Check if a location value is stored in local storage
@@ -45,9 +45,10 @@ $(function () {
                 // Display welcome back message
                 $("<h1>").html("Welcome back to the page!").appendTo("body");
 
-                // Calculate and display the distance in meters
+                // Calculate and display the distance in kilometers
                 var distanceMeters = calcDistanceBetweenPoints(currentLat, currentLon, storedLat, storedLon);
-                $("<p>").html("You traveled " + distanceMeters.toFixed(2) + " meters since your last visit").appendTo("body");
+                var distanceKm = distanceMeters / 1000; // Convert to kilometers
+                $("<p>").html("You traveled " + distanceKm.toFixed(2) + " km since your last visit").appendTo("body");
             } else {
                 // Display welcome message for first-time visitors
                 $("<h1>").html("Welcome to the page for the first time!").appendTo("body");
