@@ -3,6 +3,11 @@
     Aditya Suthar
 */
 
+
+    // DO NOT EDIT ANY CODE IN THIS FUNCTION DEFINTION
+    // function to calculate the distance in metres between two lat/long pairs on Earth
+    // Haversine formula - https://en.wikipedia.org/wiki/Haversine_formula
+    // Aren't those cool variable names? Yah gotta love JavaScript
 $(function () {
     // Function to calculate the distance in meters between two lat/long pairs on Earth
     function calcDistanceBetweenPoints(lat1, lon1, lat2, lon2) {
