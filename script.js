@@ -62,9 +62,10 @@ class ContentItem {
     });
   
     $('#updateUnsuccessful').click(function () {
-      // Attempt to update a content item unsuccessfully
-      contentItems[1].updateContentItem(1, null, 'Updated Monaco Grand Prix', null);
+      // Create a new ContentItem to represent Monaco Grand Prix
+      const updatedMonacoGrandPrix = new ContentItem(1, 'Monaco Grand Prix', 'Explore the history and excitement of the Monaco Grand Prix', 'Race');
       contentList.empty();
+      contentItems[1] = updatedMonacoGrandPrix;
       contentItems.forEach((contentItem) => {
         contentList.append(contentItem.toString());
       });
