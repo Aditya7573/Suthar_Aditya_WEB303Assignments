@@ -1,4 +1,4 @@
-// ContentItem class
+// Define the ContentItem class
 class ContentItem {
     constructor(id, name, description, categoryGenre) {
       this.id = id;
@@ -16,47 +16,58 @@ class ContentItem {
     }
   
     toString() {
-      return `
-        <div id="content-item-${this.id}" class="content-item-wrapper">
-          <h2>${this.name}</h2>
-          <p>${this.description}</p>
-          <div>${this.categoryGenre}</div>
-        </div>
-      `;
+      return `<div class="content-item-wrapper" id="content-item-${this.id}">
+        <h2>${this.name}</h2>
+        <p>${this.description}</p>
+        <div>${this.categoryGenre}</div>
+      </div>`;
     }
   }
   
   $(document).ready(function () {
-    // Create an array of ContentItem objects
+    // Create an array of 5 F1-related content items
     const contentItems = [
-      new ContentItem(0, "Content 1", "Description 1", "Category 1"),
-      new ContentItem(1, "Content 2", "Description 2", "Category 2"),
-      new ContentItem(2, "Content 3", "Description 3", "Category 3"),
-      new ContentItem(3, "Content 4", "Description 4", "Category 4"),
-      new ContentItem(4, "Content 5", "Description 5", "Category 5"),
+      new ContentItem(0, 'Lewis Hamilton', 'A biography of the legendary F1 driver', 'Biography'),
+      new ContentItem(1, 'Monaco Grand Prix', 'Explore the history and excitement of the Monaco Grand Prix', 'Race'),
+      new ContentItem(2, 'F1 Technology', 'Discover the cutting-edge technology behind Formula 1 cars', 'Technology'),
+      new ContentItem(3, 'F1 Teams', 'A look at the top F1 teams and their drivers', 'Teams'),
+      new ContentItem(4, 'F1 Champions', 'Profiles of past F1 World Champions', 'History'),
     ];
   
-    // Add content items to the page
-    const $contentItemList = $('#content-item-list');
-    contentItems.forEach((item) => {
-      $contentItemList.append(item.toString());
+    // Display the F1-related content items on the web page
+    const contentList = $('#content-item-list');
+    contentItems.forEach((contentItem) => {
+      contentList.append(contentItem.toString());
     });
   
-    // Bonus: Add buttons to update content items
-    $('#updateSuccessButton').click(function () {
-      // Example of a successful update
-      contentItems[0].updateContentItem(0, "Updated Content 1", null, null);
-      // Re-render the updated content
-      $contentItemList.empty();
-      contentItems.forEach((item) => {
-        $contentItemList.append(item.toString());
+    // Add styling to content items
+    $('.content-item-wrapper').css({
+      border: '1px solid #000',
+      width: '300px',
+      padding: '10px',
+      margin: '10px auto',
+    });
+  
+    // Bonus: Add buttons for updating content items
+    $('#content').append('<button id="updateSuccessful">Update Successful</button>');
+    $('#content').append('<button id="updateUnsuccessful">Update Unsuccessful</button>');
+  
+    $('#updateSuccessful').click(function () {
+      // Attempt to update a content item successfully
+      contentItems[0].updateContentItem(0, 'Updated Lewis Hamilton Biography', null, null);
+      contentList.empty();
+      contentItems.forEach((contentItem) => {
+        contentList.append(contentItem.toString());
       });
     });
   
-    $('#updateFailButton').click(function () {
-      // Example of an unsuccessful update (ID does not match)
-      contentItems[1].updateContentItem(0, "Attempted Update", null, null);
-      // No change should occur
+    $('#updateUnsuccessful').click(function () {
+      // Attempt to update a content item unsuccessfully
+      contentItems[1].updateContentItem(0, 'Updated Monaco Grand Prix', null, null);
+      contentList.empty();
+      contentItems.forEach((contentItem) => {
+        contentList.append(contentItem.toString());
+      });
     });
   });
   
