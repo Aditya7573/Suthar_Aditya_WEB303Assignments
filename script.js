@@ -62,13 +62,12 @@ class ContentItem {
     });
   
     $('#updateUnsuccessful').click(function () {
-      // Create a new ContentItem to represent Monaco Grand Prix
-      const updatedMonacoGrandPrix = new ContentItem(1, 'Monaco Grand Prix', 'Explore the history and excitement of the Monaco Grand Prix', 'Race');
-      contentList.empty();
-      contentItems[1] = updatedMonacoGrandPrix;
-      contentItems.forEach((contentItem) => {
-        contentList.append(contentItem.toString());
+        // Attempt to update a content item Unsuccessfully
+        contentItems[0].updateContentItem(0, 'Updated Lewis Hamilton Biography', null, null);
+        contentList.empty();
+        contentItems.forEach((contentItem) => {
+          contentList.append(contentItem.toString());
+        });
       });
-    });
   });
   
