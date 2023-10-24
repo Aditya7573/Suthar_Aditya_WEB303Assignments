@@ -1,30 +1,4 @@
-// Define the ContentItem class
-class ContentItem {
-    constructor(id, name, description, categoryGenre) {
-      this.id = id;
-      this.name = name;
-      this.description = description;
-      this.categoryGenre = categoryGenre;
-    }
-  
-    updateContentItem(id, name, description, categoryGenre) {
-      if (id === this.id) {
-        if (name !== null) this.name = name;
-        if (description !== null) this.description = description;
-        if (categoryGenre !== null) this.categoryGenre = categoryGenre;
-      }
-    }
-  
-    toString() {
-      return `<div class="content-item-wrapper" id="content-item-${this.id}">
-        <h2>${this.name}</h2>
-        <p>${this.description}</p>
-        <div>${this.categoryGenre}</div>
-      </div>`;
-    }
-  }
-  
-  $(document).ready(function () {
+$(document).ready(function () {
     // Create an array of 5 F1-related content items
     const contentItems = [
       new ContentItem(0, 'Lewis Hamilton', 'A biography of the legendary F1 driver', 'Biography'),
@@ -50,7 +24,7 @@ class ContentItem {
   
     // Bonus: Add buttons for updating content items
     $('#content').append('<button id="updateSuccessful">Update Successful</button>');
-    $('#content').append('<button id="updateUnsuccessful">Update Unsuccessful</button>');
+    $('#content').append('<button id="updateUnsuccessful">Update Unsuccessful</button');
   
     $('#updateSuccessful').click(function () {
       // Attempt to update a content item successfully
@@ -63,7 +37,7 @@ class ContentItem {
   
     $('#updateUnsuccessful').click(function () {
       // Attempt to update a content item unsuccessfully
-      contentItems[1].updateContentItem(0, 'Updated Monaco Grand Prix', null, null);
+      contentItems[1].updateContentItem(1, null, 'Updated Monaco Grand Prix', null);
       contentList.empty();
       contentItems.forEach((contentItem) => {
         contentList.append(contentItem.toString());
