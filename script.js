@@ -1,4 +1,30 @@
-$(document).ready(function () {
+// Define the ContentItem class
+class ContentItem {
+    constructor(id, name, description, categoryGenre) {
+      this.id = id;
+      this.name = name;
+      this.description = description;
+      this.categoryGenre = categoryGenre;
+    }
+  
+    updateContentItem(id, name, description, categoryGenre) {
+      if (id === this.id) {
+        if (name !== null) this.name = name;
+        if (description !== null) this.description = description;
+        if (categoryGenre !== null) this.categoryGenre = categoryGenre;
+      }
+    }
+  
+    toString() {
+      return `<div class="content-item-wrapper" id="content-item-${this.id}">
+        <h2>${this.name}</h2>
+        <p>${this.description}</p>
+        <div>${this.categoryGenre}</div>
+      </div>`;
+    }
+  }
+  
+  $(document).ready(function () {
     // Create an array of 5 F1-related content items
     const contentItems = [
       new ContentItem(0, 'Lewis Hamilton', 'A biography of the legendary F1 driver', 'Biography'),
