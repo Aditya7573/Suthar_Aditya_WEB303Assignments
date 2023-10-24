@@ -63,7 +63,7 @@ class ContentItem {
   
     $('#updateUnsuccessful').click(function () {
         // Attempt to update a content item Unsuccessfully
-        contentItems[0].updateContentItem(0, 'Unupdated Lewis Hamilton Biography', 'This should not be updated', 'Genre should remain the same');
+        contentItems[0].updateContentItem(0, 'Unupdated Lewis Hamilton Biography', null, null);
         contentList.empty();
         contentItems.forEach((contentItem) => {
           contentList.append(contentItem.toString());
