@@ -1,21 +1,74 @@
 [
   {
-      "firstName": "John",
-      "lastName": "Doe",
-      "age": 30,
-      "occupation": "Detective",
-      "location": "New York",
-      "dateOfBirth": "1993-05-15",
-      "debutDate": "2020-03-10"
+    "firstName": "Naruto",
+    "lastName": "Uzumaki",
+    "age": 19,
+    "occupation": "Ninja",
+    "location": "Konohagakure",
+    "dateOfBirth": "1999-10-10",
+    "debutDate": "2002-10-03"
   },
   {
-      "firstName": "Alice",
-      "lastName": "Smith",
-      "age": 28,
-      "occupation": "Scientist",
-      "location": "Chicago",
-      "dateOfBirth": "1995-07-20",
-      "debutDate": "2018-11-05"
+    "firstName": "Luffy",
+    "lastName": "Monkey D.",
+    "age": 19,
+    "occupation": "Pirate",
+    "location": "Thousand Sunny",
+    "dateOfBirth": "1999-05-05",
+    "debutDate": "1999-10-20"
+  },
+  {
+    "firstName": "Goku",
+    "lastName": "Son",
+    "age": 37,
+    "occupation": "Saiyan",
+    "location": "Capsule Corporation",
+    "dateOfBirth": "1986-04-16",
+    "debutDate": "1984-02-26"
+  },
+  {
+    "firstName": "Sailor",
+    "lastName": "Moon",
+    "age": 16,
+    "occupation": "Magical Girl",
+    "location": "Tokyo",
+    "dateOfBirth": "2003-06-30",
+    "debutDate": "1991-03-07"
+  },
+  {
+    "firstName": "Sasuke",
+    "lastName": "Uchiha",
+    "age": 19,
+    "occupation": "Ninja",
+    "location": "Konohagakure",
+    "dateOfBirth": "1999-07-23",
+    "debutDate": "2002-10-03"
+  },
+  {
+    "firstName": "Gon",
+    "lastName": "Freecss",
+    "age": 12,
+    "occupation": "Hunter",
+    "location": "Whale Island",
+    "dateOfBirth": "2001-05-05",
+    "debutDate": "1998-03-03"
+  },
+  {
+    "firstName": "Edward",
+    "lastName": "Elric",
+    "age": 18,
+    "occupation": "State Alchemist",
+    "location": "Amestris",
+    "dateOfBirth": "2003-02-03",
+    "debutDate": "2001-08-13"
+  },
+  {
+    "firstName": "Sakura",
+    "lastName": "Haruno",
+    "age": 19,
+    "occupation": "Ninja",
+    "location": "Konohagakure",
+    "dateOfBirth": "1999-03-28",
+    "debutDate": "2002-10-03"
   }
- 
 ]
