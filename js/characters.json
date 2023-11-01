@@ -1,0 +1,21 @@
+[
+  {
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 30,
+      "occupation": "Detective",
+      "location": "New York",
+      "dateOfBirth": "1993-05-15",
+      "debutDate": "2020-03-10"
+  },
+  {
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "age": 28,
+      "occupation": "Scientist",
+      "location": "Chicago",
+      "dateOfBirth": "1995-07-20",
+      "debutDate": "2018-11-05"
+  }
+ 
+]

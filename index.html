@@ -1,51 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fictional Characters</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            cursor: pointer;
-        }
-
-        .asc:after {
-            content: " &#x25B2;";
-        }
-
-        .desc:after {
-            content: " &#x25BC;";
-        }
-    </style>
+    <title>Chris Bumstead Fan Page</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Fictional Characters</h1>
+    <h1>Chris Bumstead Fan Page</h1>
+    
+    <!-- Accordion 1 - Personal Information -->
+    <div class="accordion">
+        <div class="accordion-header">About Chris Bumstead</div>
+        <div class="accordion-content">
+            <p>Chris Bumstead is a Canadian professional bodybuilder known for his incredible physique and dedication to the sport. He was born on August 2, 1994, in Ontario, Canada.</p>
+            <br>
+            <p>His dedication to bodybuilding started at a young age, and he has won multiple Mr. Olympia Classic Physique titles.</p>
+            <br>
+            <p>Chris is a fitness influencer and has a strong presence on social media where he shares his workouts, nutrition, and lifestyle.</p>
+            <img src="chris-bumstead.webp" alt="Chris Bumstead">
+        </div>
+      
+    </div>
+    
+    <!-- Accordion 2 - Career Achievements -->
+    <div class="accordion">
+        <div class="accordion-header">Career Achievements</div>
+        <div class="accordion-content">
+            <p>Chris Bumstead has achieved remarkable success in his bodybuilding career. He has won the prestigious Mr. Olympia Classic Physique title multiple times.</p>
+            <br>
+            <p>His dedication to training, diet, and consistent hard work has made him one of the top bodybuilders in the world.</p>
+        </div>
+      
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header">Attribution of my sources (Reference)</div>
+        <div class="accordion-content">
+            
+            <p><a href="https://campusprotein.com/blogs/articles/who-is-chris-bumstead-aka-cbum-the-making-of-the-most-influential-man-in-fitness" target="_blank">Image-1</a></p>
+            <p><a href="https://fitnessvolt.com/chris-bumstead-profile/" target="_blank">Image-2</a></p>
+            <p><a href="https://www.essentiallysports.com/us-sports-news-bodybuilding-news-mr-olympia-news-chris-bumsteads-bold-move-before-mr-olympia-2022-might-be-a-huge-risk-according-to-former-bodybuilder/" target="_blank">Image-3</a></p>
+            <p><a href="https://en.wikipedia.org/wiki/Chris_Bumstead" target="_blank">Content-Link</a></p>
+   
+   
+        </div>
+      
+    </div>
+    
+   
+    <div class="tabs">
+        <ul class="tab-headers">
+            <li>Early Life</li>
+            <li>Training</li>
+            <li>Diet</li>
+            <li>Achievements</li>
+            <li>Photos</li>
+        </ul>
+        <div class="tab-content">
+            <div>
+                <p>Chris Bumstead was born in Ontario, Canada. He developed an interest in bodybuilding at a young age and began training seriously in his late teens.</p>
+                <p>He showed early promise as a bodybuilder, and his hard work paid off as he rose to prominence in the bodybuilding world.</p>
+            </div>
+            <div>
+                <p>Chris follows a rigorous training regimen, focusing on both strength and aesthetics. His workouts are known for their intensity and dedication to perfecting every aspect of his physique.</p>
+            </div>
+            <div>
+                <p>His diet plays a crucial role in his success. Chris follows a strict nutrition plan, emphasizing high-quality proteins, healthy fats, and complex carbohydrates.</p>
+            </div>
+            <div>
+                <p>Chris's bodybuilding achievements include multiple Mr. Olympia Classic Physique titles, making him one of the top athletes in the sport.</p>
+            </div>
+            <div>
+                <img src="cbum1.jpg" alt="Chris Bumstead">
+                <img src="cbum2.jpg" alt="Chris Bumstead">
+            </div>
+
+
+  
+    </div>
+<!-- New Accordion 3 - Fictional Characters -->
+<div class="accordion">
     <table id="characterTable">
         <thead>
-            <tr>
-                <th data-sort="firstName">First Name</th>
-                <th data-sort="lastName">Last Name</th>
-                <th data-sort="age">Age</th>
-                <th data-sort="occupation">Occupation</th>
-                <th data-sort="location">Location</th>
-                <th data-sort="dateOfBirth">Date of Birth</th>
-                <th data-sort="debutDate">Debut Date</th>
-            </tr>
+          <tr>
+            <th data-sort="firstName">
+              First Name<span class="sort-icon"></span>
+            </th>
+            <th data-sort="lastName">Last Name<span class="sort-icon"></span></th>
+            <th data-sort="age">Age<span class="sort-icon"></span></th>
+            <th data-sort="occupation">
+              Occupation<span class="sort-icon"></span>
+            </th>
+            <th data-sort="location">Location<span class="sort-icon"></span></th>
+            <th data-sort="dateOfBirth">
+              Date of Birth<span class="sort-icon"></span>
+            </th>
+            <th data-sort="debutDate">
+              Debut Date<span class="sort-icon"></span>
+            </th>
+          </tr>
         </thead>
         <tbody></tbody>
-    </table>
+      </table>
+  
+</div>
 
-    <script src="characters.json"></script>
-    <script src="script.js"></script>
+    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/characters.json"></script>
 </body>
 </html>
