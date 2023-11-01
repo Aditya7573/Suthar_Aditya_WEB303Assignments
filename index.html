@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fictional Characters</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            cursor: pointer;
+        }
+
+        .asc:after {
+            content: " &#x25B2;";
+        }
+
+        .desc:after {
+            content: " &#x25BC;";
+        }
+    </style>
+</head>
+<body>
+    <h1>Fictional Characters</h1>
+    <table id="characterTable">
+        <thead>
+            <tr>
+                <th data-sort="firstName">First Name</th>
+                <th data-sort="lastName">Last Name</th>
+                <th data-sort="age">Age</th>
+                <th data-sort="occupation">Occupation</th>
+                <th data-sort="location">Location</th>
+                <th data-sort="dateOfBirth">Date of Birth</th>
+                <th data-sort="debutDate">Debut Date</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="characters.json"></script>
+    <script src="script.js"></script>
+</body>
+</html>
