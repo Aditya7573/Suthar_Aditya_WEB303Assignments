@@ -1,0 +1,104 @@
+{
+    "Anime": [
+        {
+            "First_Name": "Eren",
+            "Last_Name": "Yeager",
+            "Role": "Main Protagonist",
+            "Affiliation": "Scouts",
+            "Status": "Alive",
+            "FirstAppearance": "Episode 1",
+            "Abilities": "Titan Shifter",
+            "NotableAchievements": "Defeating the Colossal Titan"
+        },
+        {
+            "First_Name": "Mikasa",
+            "Last_Name": "Ackerman",
+            "Role": "Soldier",
+            "Affiliation": "Scouts",
+            "Status": "Alive",
+            "FirstAppearance": "Episode 1",
+            "Abilities": "Exceptional combat skills",
+            "NotableAchievements": "Saving Eren multiple times"
+        },
+        {
+            "First_Name": "Armin",
+            "Last_Name": "Arlert",
+            "Role": "Strategist",
+            "Affiliation": "Scouts",
+            "Status": "Alive",
+            "FirstAppearance": "Episode 1",
+            "Abilities": "Strategic mind",
+            "NotableAchievements": "Strategic victories against Titans"
+        },
+        {
+            "First_Name": "Levi",
+            "Last_Name": "Ackerman",
+            "Role": "Captain",
+            "Affiliation": "Scouts",
+            "Status": "Alive",
+            "FirstAppearance": "Episode 3",
+            "Abilities": "Ackerman bloodline, exceptional combat skills",
+            "NotableAchievements": "Defeating the Female Titan"
+        },
+        {
+            "First_Name": "Sasha",
+            "Last_Name": "Blouse",
+            "Role": "Soldier",
+            "Affiliation": "Scouts",
+            "Status": "Deceased",
+            "FirstAppearance": "Episode 4",
+            "Abilities": "Marksmanship, exceptional archery skills",
+            "NotableAchievements": "Taking down Titans with precision"
+        },
+        {
+            "First_Name": "Historia",
+            "Last_Name": "Reiss",
+            "Role": "Queen",
+            "Affiliation": "Royal Family",
+            "Status": "Alive",
+            "FirstAppearance": "Episode 27",
+            "Abilities": "Royal bloodline, Titan powers",
+            "NotableAchievements": "Reclaiming her true identity"
+        },
+        {
+            "First_Name": "Jean",
+            "Last_Name": "Kirschtein",
+            "Role": "Soldier",
+            "Affiliation": "Scouts",
+            "Status": "Alive",
+            "FirstAppearance": "Episode 1",
+            "Abilities": "Strategic thinking, leadership skills",
+            "NotableAchievements": "Surviving numerous Titan encounters"
+        },
+        {
+            "First_Name": "Connie",
+            "Last_Name": "Springer",
+            "Role": "Soldier",
+            "Affiliation": "Scouts",
+            "Status": "Alive",
+            "FirstAppearance": "Episode 1",
+            "Abilities": "Agility, quick reflexes",
+            "NotableAchievements": "Contributions in Titan battles"
+        },
+        {
+            "First_Name": "Erwin",
+            "Last_Name": "Smith",
+            "Role": "Commander",
+            "Affiliation": "Scouts",
+            "Status": "Deceased",
+            "FirstAppearance": "Episode 1",
+            "Abilities": "Leadership, strategic planning",
+            "NotableAchievements": "Leading the Scouts to numerous victories"
+        },
+        {
+            "First_Name": "Annie",
+            "Last_Name": "Leonhart",
+            "Role": "Warrior",
+            "Affiliation": "Warrior Unit",
+            "Status": "Unknown",
+            "FirstAppearance": "Episode 17",
+            "Abilities": "Female Titan shifter",
+            "NotableAchievements": "Engaging in battles against the Scouts"
+        }
+    ]
+}
