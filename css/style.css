@@ -1,27 +1,35 @@
 * {
     background-color: floralwhite;
-}
-
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-table, th, td {
+  }
+  
+  h1 {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  table,
+  th,
+  td {
     border: 1px solid;
-    padding: auto;
-    text-align: center;;
-}
-
-th {
+    padding: 8px; /* Adjust this value to your preference */
+    text-align: center;
+  }
+  
+  th {
     background-color: black;
     color: white;
-}
-
-td {
+  }
+  
+  .name.highlighted td {
+    background-color: #006400;
+    color: white;
+  }
+  
+  td {
     background-color: lightcoral;
-}
-
-#searchButton1, #searchButton2 {
+  }
+  
+  #filterAM,
+  #filterNZ {
     background-color: green;
     color: white;
     padding: 15px 25px;
@@ -31,4 +39,5 @@ td {
     font-size: 16px;
     margin: 2px 2px;
     cursor: pointer;
-}
+  }
+  

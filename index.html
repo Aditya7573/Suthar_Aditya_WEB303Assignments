@@ -1,40 +1,46 @@
-<html>
-
-<head>
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <h1>Aditya's Character Attack on Titan</h1>
-    <input type="search" id="search" placeholder="Search By Character First Name!" />
-    <br><br>
+    <input
+      type="search"
+      id="search"
+      placeholder="Search By Character First Name!"
+    />
+    <br /><br />
     <table id="cartoons">
-        <thead>
-            <tr>
-                <th>First_Name</th>
-                <th>Last_Name</th>
-                <th>Role</th>
-                <th>Affiliation</th>
-                <th>Status</th>
-                <th>First Appearance</th>
-                <th>Abilities</th>
-                <th>Notable Achievements</th>
-            </tr>
-        </thead>
-        <tbody id="tbody">
-
-        </tbody>
+      <thead>
+        <tr>
+          <th>First_Name</th>
+          <th>Last_Name</th>
+          <th>Role</th>
+          <th>Affiliation</th>
+          <th>Status</th>
+          <th>First Appearance</th>
+          <th>Abilities</th>
+          <th>Notable Achievements</th>
+        </tr>
+      </thead>
+      <tbody id="tbody" class="name"></tbody>
     </table>
-    <br>
-    <button type="button" id="searchButton1">A - M(5)<div id="button1"></div> </button>
-    <button type="button" id="searchButton2">N - Z(3)<div id="button2"></div> </button>
-    <br>
+    <br />
+    <button type="button" id="filterAM">
+      A - M (<span id="button1">0</span>)
+    </button>
+    <button type="button" id="filterNZ">
+      N - Z (<span id="button2">0</span>)
+    </button>
+    <br />
 
-</div>
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-
+    <!-- Include your script.js file -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
