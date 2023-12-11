@@ -20,15 +20,15 @@ $(document).ready(function () {
       success: function (data) {
         data.cartoons.forEach((cartoon) => {
           $("table tbody").append(`
-              <tr class="name">
-                <td>${cartoon.breed}</td>
-                <td>${cartoon.country}</td>
-                <td>${cartoon.origin}</td>
-                <td>${cartoon.coat}</td>
-                <td>${cartoon.partten}</td>
-  
-              </tr>
-            `);
+                <tr class="name">
+                  <td>${cartoon.breed}</td>
+                  <td>${cartoon.country}</td>
+                  <td>${cartoon.origin}</td>
+                  <td>${cartoon.coat}</td>
+                  <td>${cartoon.partten}</td>
+    
+                </tr>
+              `);
         });
   
         // Initialize filter counts
@@ -43,6 +43,20 @@ $(document).ready(function () {
         let breed = $(this).find("td:eq(0)").text().toLowerCase();
   
         if (breed.includes(searchTerm)) {
+          $(this).addClass("highlighted");
+        } else {
+          $(this).removeClass("highlighted");
+        }
+      });
+    });
+  
+    $("#search").on("input", function () {
+      var searchTerm = $(this).val().toLowerCase();
+  
+      $("tbody tr.name").each(function () {
+        let country = $(this).find("td:eq(1)").text().toLowerCase();
+  
+        if (country.includes(searchTerm)) {
           $(this).addClass("highlighted");
         } else {
           $(this).removeClass("highlighted");
