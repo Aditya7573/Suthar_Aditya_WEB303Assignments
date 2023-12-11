@@ -20,17 +20,17 @@
   }
   
   .name.highlighted td {
-    background-color: #006400;
-    color: white;
+    background-color: #f3a3f0;
+    color: rgb(0, 0, 0);
   }
   
   td {
-    background-color: lightcoral;
+    background-color: rgb(255, 255, 255);
   }
   
   #filterAM,
   #filterNZ {
-    background-color: green;
+    background-color: rgb(216, 96, 202);
     color: white;
     padding: 15px 25px;
     text-align: center;
@@ -39,5 +39,116 @@
     font-size: 16px;
     margin: 2px 2px;
     cursor: pointer;
+  }
+  
+  /* Reset some default styles */
+  body,
+  h1,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Accordion styles */
+  .accordion {
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .accordion-header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+  }
+  
+  /* Tabbed section styles */
+  .tabs {
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .tab-headers {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tab-headers li {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tab-headers li.active {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  .tab-content > div {
+    display: none;
+    padding: 10px;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Links */
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    cursor: pointer;
+  }
+  
+  .asc:after {
+    content: " &#x25B2;";
+  }
+  
+  .desc:after {
+    content: " &#x25BC;";
   }
   
